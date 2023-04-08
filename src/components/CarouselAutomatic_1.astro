@@ -1,0 +1,67 @@
+---
+---
+
+<style>
+	.pic-ctn {
+		position: relative;
+		width: 100vw;
+		height: 70vh;
+	}
+	@keyframes display {
+		0% {
+			transform: translateX(200px);
+			opacity: 0;
+		}
+		10% {
+			transform: translateX(0);
+			opacity: 1;
+		}
+		20% {
+			transform: translateX(0);
+			opacity: 1;
+		}
+		30% {
+			transform: translateX(-200px);
+			opacity: 0;
+		}
+		100% {
+			transform: translateX(-200px);
+			opacity: 0;
+		}
+	}
+	.pic {
+		width: 90%;
+		height: 100%;
+		background-color: red;
+		position: absolute;
+		top: 0;
+		left: 5%;
+		opacity: 0;
+		animation: display 35s infinite;
+	}
+	.pic:nth-child(2) {
+		animation-delay: 7s;
+		background-color: yellow;
+	}
+	.pic:nth-child(3) {
+		animation-delay: 14s;
+		background-color: gray;
+	}
+	.pic:nth-child(4) {
+		animation-delay: 21s;
+		background-color: orange;
+	}
+	.pic:nth-child(5) {
+		animation-delay: 28s;
+		background-color: brown;
+	}
+</style>
+
+<h2>Scroll Automatic (Success)</h2>
+<div class="pic-ctn">
+	<div class="pic"></div>
+	<div class="pic"></div>
+	<div class="pic"></div>
+	<div class="pic"></div>
+	<div class="pic"></div>
+</div>

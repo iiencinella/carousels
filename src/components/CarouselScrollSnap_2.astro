@@ -1,0 +1,49 @@
+---
+---
+
+<style>
+	.container_Snap2 {
+		display: grid;
+		gap: 1rem;
+		grid-auto-flow: column;
+		overflow-y: auto;
+		overscroll-behavior-x: contain;
+		scroll-snap-type: x mandatory;
+		scrollbar-width: none;
+	}
+	.container_Snap2 > img {
+  scroll-snap-align: start;
+}
+
+.container_Snap2 img {
+  border-radius: 10px;
+  border-style: solid;
+  border-color: #fff;
+  border-width: 3px;
+  width: 950px;
+
+  object-fit: contain;
+}
+
+.container_Snap2::-webkit-scrollbar {
+  display: none;
+}
+</style>
+
+<h2>Scroll Snap Grid in CSS</h2>
+<div class="container_Snap2">
+	<img
+		src="https://media.discordapp.net/attachments/1081796512239071305/1081851789843890226/20230305_133632_0000.png"
+	/>
+	<img
+		src="https://media.discordapp.net/attachments/1081796512239071305/1081851789059555348/20230305_133632_0001.png"
+	/>
+
+	<img
+		src="https://media.discordapp.net/attachments/1081796512239071305/1081851789323817000/20230305_133632_0002.png"
+	/>
+
+	<img
+		src="https://media.discordapp.net/attachments/1081796512239071305/1081851789567078400/20230305_133632_0003.png"
+	/>
+</div>

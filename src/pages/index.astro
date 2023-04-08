@@ -1,0 +1,26 @@
+---
+import Header from "../components/Header.astro";
+import CarouselScrollSnap1 from "../components/CarouselScrollSnap_1.astro";
+import CardScrollSnap1 from "../components/CardScrollSnap_1.astro";
+import CarouselScrollSnap2 from "../components/CarouselScrollSnap_2.astro";
+import CarouselAutomatic1 from "../components/CarouselAutomatic_1.astro";
+---
+
+<html lang="en" class="scroll-smooth">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Carousels</title>
+	</head>
+	<body>
+		<div class="bg-black text-white">
+			<Header />
+		</div>
+		<CarouselScrollSnap1 />
+		<CardScrollSnap1 />
+		<CarouselScrollSnap2 />
+		<CarouselAutomatic1 />
+	</body>
+</html>
